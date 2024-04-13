@@ -1,14 +1,12 @@
 
-<!DOCTYPE html>
-<html>
-
-<body>
-    <h2>Welcome to the Bank System</h2>
-    <ul>
-        <li><a href='account.php'>Account</a></li>
-        <li><a href='transfers.php'>Transfers</a></li>
-        
-        
-    </ul>
-</body>
-</html>
+<?php include_once(APP_ROOT . "/src/webPages/data.php"); ?>
+<!---Navigation Bar------------------------------------------------->
+        <nav>
+            <ul>
+                <?php foreach ($navigationArray as $nav){ ?>
+                    <li> <a href="<?php echo $nav["src"]?>"> <?php echo(" | " . $nav["title"] . " | " )  ?></a></li>
+                <?php }  ?>
+            </ul>
+        </nav>   
+    <br><br>  
+<!------------------------------------------------------------------>
