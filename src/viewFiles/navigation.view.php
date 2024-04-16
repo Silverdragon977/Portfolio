@@ -1,5 +1,5 @@
 
-<?php include_once(APP_ROOT . "/src/webPages/data.php"); ?>
+<!-- <?php include_once("./src/webPages/data.php"); ?> -->
 <!---Navigation Bar------------------------------------------------->
         <nav>
             <ul>

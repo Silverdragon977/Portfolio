@@ -12,7 +12,7 @@
             <h1>&nbsp;&nbsp;&nbsp;&nbsp; <?php echo "Welcome " ?></h1>
         </div>
 
-        <img id="banner" src="./../Images/banner.jpg" alt="Banner Image">
+        <img id="banner" src="src/Images/banner.jpg" alt="Banner Image">
 
     </header>
 

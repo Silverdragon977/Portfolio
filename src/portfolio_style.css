@@ -14,6 +14,7 @@ body {
     background-color: #bdbdbd;
     margin-left: 2%;
     margin-top: 2%;
+    min-height: 1080px;
 }
 
 /*//////////////---Header Below---///////////////////////////////////////////////////////////////////////////////*/
@@ -33,7 +34,9 @@ header {background-color: #d8e1e6;
     overflow: hidden;
     z-index: 1;
 }
-#banner-container {position: relative;  overflow: hidden;  width:99%;}
+#banner-container {position: relative;  
+    overflow: hidden;  width:99%;
+    min-height: 350px;}
 #overlay-div {background-color: #3a2d97;
     color: #fefbd8;
     border-radius: 1em 1em 1em 1em;
@@ -56,7 +59,7 @@ h1 {font-family: 'Times New Roman', Times, serif;
     height: 2em;
     padding-top: 25px;
     min-width: 300px;
-    top:25%;
+    top:15%;
     display:inline-block;
 }
 #profileImage {float: right; 

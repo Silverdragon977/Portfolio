@@ -1,38 +1,39 @@
 
 
 <?php
+
 $name="Michael Howard";
     $pageName = "Homepage";
     $navigationArray = [
 
         [
             "title" => "Homepage",   
-            "src"=> "./../../index.php"
+            "src"=> "/Portfolio-Dev/index.php"
         ], 
 
         [
             "title" => "About",
-            "src"=> "../../src/webPages/about.php"
+            "src"=> "/Portfolio-Dev/src/webPages/about.php"
         ],
 
         [
             "title" => "Projects",
-            "src"=> "./projects"
+            "src"=> "/Portfolio-Dev/src/webPages/about.php"
         ],
         [
             "title" => "Experience",
-            "src"=> "./experience"
+            "src"=> "/Portfolio-Dev/src/webPages/"
         ],
         [
             "title" => "Resume",
-            "src"=> "./resume"
+            "src"=> "/Portfolio-Dev/src/webPages/"
         ],
         [
             "title" => "Contact",
-            "src"=> "./contact.php"
+            "src"=> "/Portfolio-Dev/src/webPages/"
         ],
         [
             "title" => "Admin",
-            "src"=> "./admin"
+            "src"=> "/Portfolio-Dev/src/webPages/"
         ],
     ];
