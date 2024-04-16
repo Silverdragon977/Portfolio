@@ -4,9 +4,9 @@
 DONE ----->First setup the file structure and get a homepage working with the words "Hello World" on it
   make sure CSS and php is working correctly
 
-Second add webpages with basic structure that will be rewritten in php
+DONE ----->Second add webpages with basic structure that will be rewritten in php
 
-Third  Implement the navigation bar using php to allow movement to other pages
+DONE ----->Third  Implement the navigation bar using php to allow movement to other pages
 
 Fourth  Implement the list structure in php like in the ruberic
 
