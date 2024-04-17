@@ -8,7 +8,7 @@
     <div id="wrapper">
     <header id="banner-container">
         <div id="overlay-div">
-            <img id="profileImage" src="./Images/bankIcon.jpg">
+            <img id="profileImage" src="./../Images/bankIcon.jpg">
             <h1>&nbsp;&nbsp;&nbsp;&nbsp; <?php echo "Welcome " ?></h1>
         </div>
 

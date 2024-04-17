@@ -3,7 +3,6 @@
 <?php
 
 $name="Michael Howard";
-    $pageName = "Homepage";
     $navigationArray = [
 
         [
@@ -18,22 +17,31 @@ $name="Michael Howard";
 
         [
             "title" => "Projects",
-            "src"=> "/Portfolio-Dev/src/webPages/about.php"
-        ],
-        [
-            "title" => "Experience",
-            "src"=> "/Portfolio-Dev/src/webPages/"
+            "src"=> "/Portfolio-Dev/src/webPages/projects.php"
         ],
         [
             "title" => "Resume",
-            "src"=> "/Portfolio-Dev/src/webPages/"
+            "src"=> "/Portfolio-Dev/src/webPages/resume.php"
         ],
         [
             "title" => "Contact",
-            "src"=> "/Portfolio-Dev/src/webPages/"
+            "src"=> "/Portfolio-Dev/src/webPages/contact.php"
         ],
         [
             "title" => "Admin",
-            "src"=> "/Portfolio-Dev/src/webPages/"
+            "src"=> "/Portfolio-Dev/src/webPages/admin.php"
         ],
     ];
+
+    $aboutText = [
+        [
+            "data" => "Personal Intro Here"
+        ],
+        [
+            "data" => "Education Here"
+        ],
+        [
+            "data" => "Skills and Awards Here"
+        ]
+    ];
+

@@ -5,11 +5,6 @@ include_once( "./../../src/viewFiles/head.view.php");
 include_once("./../../src/viewFiles/header.view.php");
 include_once("./../../src/viewFiles/navigation.view.php");
 
-echo '<img id="aboutImg" src="../Images/profile.jpg">';
-
- foreach ($aboutText as $text){ 
-    echo "<div id='divBox'>" . $text["data"] . "<p></p>" . "</div>";
- };  
-
+echo "Projects Here";
 
 include_once("./../../src/viewFiles/footer.view.php");
