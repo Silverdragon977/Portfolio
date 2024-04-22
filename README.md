@@ -15,9 +15,9 @@ DONE ----->Fifth  make the database and get the database up and running
 
 Sixth create a form to login to the admin page
         a.) make method get_DataBaseEntry() to get login info from table
-        b.) make form to get user info and post it to new loginForm.php page
-        c.) make compare() method to compare the database info and user info returning Boolean
-        d.) if compare() returns true then send user to admin.php if false tell the user in loginForm.php              page that their info is incorrect
+        DONE ----->b.) make form to get user info and post it to new loginForm.php page
+        DONE ----->c.) make compare() method to compare the database info and user info returning Boolean
+        DONE ----->d.) if compare() returns true then send user to admin.php if false tell the user in                                        loginForm.php              page that their info is incorrect
 
 Seventh Work on classes to interact with the database
         c.) create_DataEntry() function that will take a array and make a database entry with it
