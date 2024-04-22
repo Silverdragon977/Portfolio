@@ -2,34 +2,39 @@
 
 <?php
 
+$config = parse_ini_file('./config.ini', true);
+$environment = $config['ENVIRONMENT'];
+$URL_BASE = $config[$environment]['URL_BASE'];
+$APP_ROOT = $config[$environment]['APP_ROOT']; 
+
 $name="Michael Howard";
     $navigationArray = [
 
         [
             "title" => "Homepage",   
-            "src"=> "/Portfolio-Dev/index.php"
+            "src"=> $APP_ROOT . "/index.php"
         ], 
 
         [
             "title" => "About",
-            "src"=> "/Portfolio-Dev/src/webPages/about.php"
+            "src"=> $APP_ROOT . "/src/webPages/about.php"
         ],
 
         [
             "title" => "Projects",
-            "src"=> "/Portfolio-Dev/src/webPages/projects.php"
+            "src"=> $APP_ROOT . "/src/webPages/projects.php"
         ],
         [
             "title" => "Resume",
-            "src"=> "/Portfolio-Dev/src/webPages/resume.php"
+            "src"=> $URL_BASE . "/src/webPages/resume.pdf"
         ],
         [
             "title" => "Contact",
-            "src"=> "/Portfolio-Dev/src/webPages/contact.php"
+            "src"=> $APP_ROOT . "/src/webPages/contact.php"
         ],
         [
             "title" => "Admin",
-            "src"=> "/Portfolio-Dev/src/webPages/admin.php"
+            "src"=> $APP_ROOT . "/src/webPages/admin.php"
         ],
     ];
 
