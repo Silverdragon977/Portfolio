@@ -13,9 +13,9 @@ include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
 ?>
 <form action='commentHandler.php' id='contactForm' method='post'>
     <label for='fname'> Enter full name: </label><br>
-        <input type='text' id='fname' name='fname'><br>
+        <input type='text' id='fname' name='fname' required><br>
     <label for='comment'> Enter message: </label><br>
-        <textarea id='comment' name='comment' rows='10' cols='30'></textarea><br>
+        <textarea id='comment' name='comment' rows='10' cols='30' required></textarea><br>
     <button type='submit'>Submit</button>
 
 </form>

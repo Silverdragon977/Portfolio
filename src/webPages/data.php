@@ -12,17 +12,17 @@ $name="Michael Howard";
 
         [
             "title" => "Homepage",   
-            "src"=> $APP_ROOT . "/index.php"
+            "src"=> $URL_BASE . "/index.php"
         ], 
 
         [
             "title" => "About",
-            "src"=> $APP_ROOT . "/src/webPages/about.php"
+            "src"=> $URL_BASE . "/src/webPages/about.php"
         ],
 
         [
             "title" => "Projects",
-            "src"=> $APP_ROOT . "/src/webPages/projects.php"
+            "src"=> $URL_BASE . "/src/webPages/projects.php"
         ],
         [
             "title" => "Resume",
@@ -30,11 +30,11 @@ $name="Michael Howard";
         ],
         [
             "title" => "Contact",
-            "src"=> $APP_ROOT . "/src/webPages/contact.php"
+            "src"=> $URL_BASE . "/src/webPages/contact.php"
         ],
         [
             "title" => "Admin",
-            "src"=> $APP_ROOT . "/src/webPages/admin.php"
+            "src"=> $URL_BASE . "/src/webPages/loginAdmin.php"
         ],
     ];
 

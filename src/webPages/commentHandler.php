@@ -14,9 +14,11 @@ include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullName = htmlspecialchars($_POST["fname"]);
     $comment = htmlspecialchars($_POST["comment"]);
-    echo "Hello " . $fullName . "! <br><br>" . "I have recieved your message!<br><br><br>";
-    echo $comment;
+    echo "Hello " . htmlspecialchars($fullName) . "! <br><br>" . "I have recieved your message!<br><br><br>";
+    echo htmlspecialchars($comment);
 
+} else {
+    header("Location: ./contact.php");
 };
 
 include_once($APP_ROOT . "/src/viewFiles/footer.view.php");
