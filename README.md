@@ -1,3 +1,4 @@
+<pre>
 # Portfolio
  This website portfolio was made 4/12/24 (BSU)
 
@@ -26,3 +27,4 @@ Seventh Work on classes to interact with the database
       
 
 Sixth  Login page    Use inputs to gather username and password into variables and search the database for them
+</pre>
