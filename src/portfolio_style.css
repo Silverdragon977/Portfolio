@@ -35,7 +35,7 @@ header {background-color: #d8e1e6;
     z-index: 1;
 }
 #banner-container {position: relative;  
-    overflow: hidden;  width:99%;
+    overflow: hidden;  width:98%;
     min-height: 350px;}
 #overlay-div {background-color: #3a2d97;
     color: #fefbd8;
@@ -44,7 +44,7 @@ header {background-color: #d8e1e6;
     box-shadow: .3em .6em .2em #618685;
     min-width: 300px;
     width:80%;
-    height:40%;
+    height:44%;
     margin-left: 10%;
     position: absolute;
     padding: 20px;
@@ -71,18 +71,19 @@ header {background-color: #d8e1e6;
 h1 {font-family: 'Times New Roman', Times, serif;
     color: white;
     position: relative;
-    font-size: 2em;
+    font-size: 4em;
     height: 2em;
     padding-top: 25px;
     min-width: 300px;
     top:15%;
     display:inline-block;
+    font-family: 'Orbitron', 'Times New Roman';
 }
 #profileImage {float: right; 
     margin-right:50px;
-    width: 100px; 
-    height: 100px; 
-    margin-top:7px;
+    width: 160px; 
+    height: 160px; 
+    margin-top:19px;
     padding: 5px;
     border: 5px solid black;
     border-radius: 30%;
@@ -110,7 +111,7 @@ nav {
     position:absolute;
     z-index: 2;
     margin-top:-5%;
-    width:95%;
+    width:94%;
     height: 45px;
     margin-left:1%;
     text-align: center;
@@ -151,3 +152,69 @@ article {
 
 }
 /*//////////////////////////////////////////////*/
+table {width: 98%;}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+tr:hover {background-color: #D6EEEE;}
+
+#loginForm {
+    width: 100%;
+    background-color: #bdbdbd;
+    padding: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[id=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+#divBoxAdmin {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 40%;
+    margin-left: 30%;
+  }

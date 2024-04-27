@@ -10,6 +10,8 @@ include_once($APP_ROOT . "/src/viewFiles/head.view.php");
 include_once($APP_ROOT . "/src/viewFiles/header.view.php");
 include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
 ?>
+<div id="divBoxAdmin">
+<div id="loginForm">
 <form action='loginHandler.php' id='contactForm' method='post'>
     <label for='username'> Enter username: </label><br>
         <input type='text' id='username' name='username' required><br>
@@ -17,8 +19,9 @@ include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
         <input type="email"   for="email" id='email' name='email' required><br>
     <label for="password"> Enter Password: </label><br>
         <input type="password" id="password" name="password" required>
-    <button type='submit'>Submit</button>
-
+    <button type="submit">Submit</button>
 </form>
+</div>
+</div>
 <?php
 include_once("./../../src/viewFiles/footer.view.php");

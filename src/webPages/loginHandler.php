@@ -18,17 +18,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_password = htmlspecialchars($_POST["password"]);
     try {
         include_once($APP_ROOT . "/src/dataBase/databaseConnection.php");
-        $showTable = "SELECT * FROM login";
-        $stmt = $conn->query($showTable)->fetchall(PDO::FETCH_ASSOC);
-        $db_username = $stmt[0]["name"];
-        $db_email = $stmt[0]["email"];
-        $db_password = $stmt[0]["password"];
+        $loginConn = new DatabaseConnection();
+        $array = $loginConn->selectAllRecordsFromLogin();
+        $db_username = $array[0]["name"];
+        $db_email = $array[0]["email"];
+        $db_password = $array[0]["password"];
+
     } catch (PDOException $e) {
         die("Query Failed: " . $e->getMessage());
     };
  } else {
     header("Location: ./loginAdmin.php");
 };
+
+
+
+
 function compare($user_userName, $user_email, $user_password, $db_username, $db_email, $db_password ) {
     if ($user_userName == $db_username){
         if ($user_email == $db_email){
@@ -41,7 +46,7 @@ function compare($user_userName, $user_email, $user_password, $db_username, $db_
 if (compare($user_userName, $user_email, $user_password, $db_username, $db_email, $db_password) == TRUE){
     header("Location: ./admin.php");
 } else { 
-    echo "Incorrect Information!";
+    header("Location: ./loginAdmin.php");
 };
 
 include_once($APP_ROOT . "/src/viewFiles/footer.view.php");

@@ -11,14 +11,17 @@ include_once($APP_ROOT . "/src/viewFiles/header.view.php");
 include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
 
 ?>
+<div id="divBoxAdmin">
+<div id="loginForm">
 <form action='commentHandler.php' id='contactForm' method='post'>
     <label for='fname'> Enter full name: </label><br>
         <input type='text' id='fname' name='fname' required><br>
     <label for='comment'> Enter message: </label><br>
-        <textarea id='comment' name='comment' rows='10' cols='30' required></textarea><br>
+        <textarea id='comment' name='comment' rows='10' cols='95' required></textarea><br>
     <button type='submit'>Submit</button>
-
 </form>
+</div>
+</div>
 <?php
 
 include_once($APP_ROOT . "/src/viewFiles/footer.view.php");
