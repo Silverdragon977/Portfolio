@@ -23,6 +23,16 @@ class DatabaseConnection {
         $stmt = $this->conn->query($showTable)->fetchall(PDO::FETCH_ASSOC);
         return $stmt;
        }
+       public function selectAllRecordsFromProjects(){
+        $showTable = "SELECT * FROM projects";
+        $stmt = $this->conn->query($showTable)->fetchall(PDO::FETCH_ASSOC);
+        return $stmt;
+       }
+       public function createProjectRecord($user_title, $user_languages, $user_short_description, $user_full_description, $user_github_link){
+        $createQuery = "INSERT INTO projects (title, languages, short_description, full_description, github_link) Values ($user_title, $user_languages, $user_short_description, $user_full_description, $user_github_link); ";
+        $this->conn->exec($createQuery);
+        }
+       
 
 
 };

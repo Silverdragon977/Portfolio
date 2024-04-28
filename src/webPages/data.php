@@ -26,7 +26,7 @@ $name="Michael Howard";
         ],
         [
             "title" => "Resume",
-            "src"=> $URL_BASE . "/src/webPages/resume.pdf"
+            "src"=> $URL_BASE . "/src/webPages/Michael_Howard_Resume.pdf"
         ],
         [
             "title" => "Contact",
