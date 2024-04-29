@@ -21,12 +21,13 @@ $user_github_link       = htmlspecialchars($_POST["github_link"]);
 try {
     include_once($APP_ROOT . "/src/dataBase/databaseConnection.php");
     $createRecordConn = new DatabaseConnection();
-    $createRecordConn->createProjectRecord($user_title, $user_languages, $user_short_description, $user_full_description, $user_github_link);
+    $createRecordConn->updateProjectRecord($user_title, $user_languages, $user_short_description, $user_full_description, $user_github_link);
 
 } catch (PDOException $e) {
     die("Query Failed: " . $e->getMessage());
 };
+
 header("Location: ./admin.php");
 } else {
-header("Location: ./createRecord.php");
+header("Location: ./admin.php");
 };

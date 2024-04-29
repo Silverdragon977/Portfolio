@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         include_once($APP_ROOT . "/src/dataBase/databaseConnection.php");
         $loginConn = new DatabaseConnection();
         $array = $loginConn->selectAllRecordsFromLogin();
+        //Grab data from database and assign variables
         $db_username = $array[0]["name"];
         $db_email = $array[0]["email"];
         $db_password = $array[0]["password"];
@@ -30,10 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  } else {
     header("Location: ./loginAdmin.php");
 };
-
-
-
-
 function compare($user_userName, $user_email, $user_password, $db_username, $db_email, $db_password ) {
     if ($user_userName == $db_username){
         if ($user_email == $db_email){
@@ -44,8 +41,10 @@ function compare($user_userName, $user_email, $user_password, $db_username, $db_
     } else {return FALSE;};
 };
 if (compare($user_userName, $user_email, $user_password, $db_username, $db_email, $db_password) == TRUE){
+    $_SESSION['loggedIn'] = true;
     header("Location: ./admin.php");
 } else { 
+    $_SESSION['loggedIn'] = false;
     header("Location: ./loginAdmin.php");
 };
 

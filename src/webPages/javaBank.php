@@ -20,10 +20,10 @@ include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
   
   
   echo "
-  <article><h2>" . $records[1]["title"] . "</h2><br>
-  Languages used: " . $records[1]["languages"] . "<br><br></article><br><br><br><article>" .
-  $records[1]["full_description"] . "<br>" . 
-  "<t><b><a href='https://github.com/Silverdragon977/JavaBank.git'>" . $records[1]["github_link"] . "</a></t></b><br></article>";
+  <article><h2>" . $records[0]["title"] . "</h2><br>
+  Languages used: " . $records[0]["languages"] . "<br><br></article><br><br><br><article>" .
+  $records[0]["full_description"] . "<br>" . 
+  "<t><b><a href='https://github.com/Silverdragon977/JavaBank.git'>" . $records[0]["github_link"] . "</a></t></b><br></article>";
 
 include_once($APP_ROOT . "/src/viewFiles/footer.view.php");
 

@@ -9,6 +9,9 @@ include_once($APP_ROOT . "/src/webPages/data.php");
 include_once($APP_ROOT . "/src/viewFiles/head.view.php");
 include_once($APP_ROOT . "/src/viewFiles/header.view.php");
 include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
+
+$_SESSION['loggedIn'] = false;
+
 ?>
 <div id="divBoxAdmin">
 <div id="loginForm">

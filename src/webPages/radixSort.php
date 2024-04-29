@@ -20,10 +20,10 @@ $records = $adminConn->selectAllRecordsFromProjects();
 
 
 echo "
-<article><h2>" . $records[2]["title"] . "</h2><br>
-Languages used: " . $records[2]["languages"] . "<br><br></article><br><br><br><article>" .
-$records[2]["full_description"] . "<br>" . 
-"<t><b><a href='https://github.com/Silverdragon977/RadixSort.git'>" . $records[2]["github_link"] . "</a></t></b><br></article>";
+<article><h2>" . $records[1]["title"] . "</h2><br>
+Languages used: " . $records[1]["languages"] . "<br><br></article><br><br><br><article>" .
+$records[1]["full_description"] . "<br>" . 
+"<t><b><a href='https://github.com/Silverdragon977/RadixSort.git'>" . $records[1]["github_link"] . "</a></t></b><br></article>";
 
 include_once($APP_ROOT . "/src/viewFiles/footer.view.php");
 

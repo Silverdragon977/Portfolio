@@ -34,6 +34,7 @@ $adminConn = new DatabaseConnection();
 $records = $adminConn->selectAllRecordsFromProjects();
 
 for ($i = 0; $i < sizeof($records); $i++ ){
+
     echo
 "<tr>
 <td>"  . $records[$i]["title"] . "</td>" . 
@@ -43,46 +44,8 @@ $records[$i]["short_description"] . "</a></td>" .
 "<td>" . $records[$i]["github_link"] . "</td>" . 
 "</tr>";
 
-
 }
-// echo
-// "<tr>
-// <td>"  . $records[0]["title"] . "</td>" . 
-// "<td>" . $records[0]["languages"] . "</td>" . 
-// "<td> <a href='" . $records[0]["github_link"] . "'>" . 
-// $records[0]["short_description"] . "</a></td>" . 
-// "<td>" . $records[0]["github_link"] . "</td>" . 
-// "</tr>";
 
-
-// echo 
-// "<tr>
-// <td>"  . $records[0]["title"] . "</td>" . 
-// "<td>" . $records[0]["languages"] . "</td>" . 
-// "<td> <a href='bemidjiBurgers.php'>" . 
-// $records[0]["short_description"] . "</a></td>" . 
-// "<td>" . $records[0]["github_link"] . "</td>" . "</tr>";
-// echo 
-// "<tr>
-// <td>"  . $records[1]["title"] . "</td>" . 
-// "<td>" . $records[1]["languages"] . "</td>" . 
-// "<td> <a href='javaBank.php'>" . 
-// $records[1]["short_description"] . "</a></td>" . 
-// "<td>" . $records[1]["github_link"] . "</td>" . "</tr>";
-// echo 
-// "<tr>
-// <td>"  . $records[2]["title"] . "</td>" . 
-// "<td>" . $records[2]["languages"] . "</td>" . 
-// "<td> <a href='radixSort.php'>" . 
-// $records[2]["short_description"] . "</a></td>" . 
-// "<td>" . $records[2]["github_link"] . "</td>" . "</tr>";
-// echo 
-// "<tr>
-// <td>"  . $records[3]["title"] . "</td>" . 
-// "<td>" . $records[3]["languages"] . "</td>" . 
-// "<td> <a href='radixSort.php'>" . 
-// $records[3]["short_description"] . "</a></td>" . 
-// "<td>" . $records[3]["github_link"] . "</td>" . "</tr>";
        ?>
 
 
