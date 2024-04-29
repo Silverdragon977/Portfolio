@@ -1,5 +1,7 @@
 <?php
-
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 $config = parse_ini_file('config.ini', true);
 $environment = $config['ENVIRONMENT'];
 $URL_BASE = $config[$environment]['URL_BASE'];
@@ -10,8 +12,6 @@ include_once($APP_ROOT . "/src/viewFiles/head.view.php");
 include_once($APP_ROOT . "/src/viewFiles/header.view.php");
 include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
 
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $user_userName = htmlspecialchars($_POST["username"]);
     $user_email = htmlspecialchars($_POST["email"]);
@@ -28,9 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (PDOException $e) {
         die("Query Failed: " . $e->getMessage());
     };
- } else {
-    header("Location: ./loginAdmin.php");
-};
+ 
 function compare($user_userName, $user_email, $user_password, $db_username, $db_email, $db_password ) {
     if ($user_userName == $db_username){
         if ($user_email == $db_email){
@@ -41,10 +39,9 @@ function compare($user_userName, $user_email, $user_password, $db_username, $db_
     } else {return FALSE;};
 };
 if (compare($user_userName, $user_email, $user_password, $db_username, $db_email, $db_password) == TRUE){
-    $_SESSION['loggedIn'] = true;
+    $_SESSION["log"] = "yes";
     header("Location: ./admin.php");
 } else { 
-    $_SESSION['loggedIn'] = false;
     header("Location: ./loginAdmin.php");
 };
 

@@ -1,6 +1,9 @@
 <?php 
 $name = "Bank Name";
 $pageName = "Log-In";
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 
 <!DOCTYPE html>

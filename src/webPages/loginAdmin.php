@@ -1,5 +1,7 @@
 <?php
-
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 $config = parse_ini_file('../../config.ini', true);
 $environment = $config['ENVIRONMENT'];
 $URL_BASE = $config[$environment]['URL_BASE'];
@@ -10,9 +12,9 @@ include_once($APP_ROOT . "/src/viewFiles/head.view.php");
 include_once($APP_ROOT . "/src/viewFiles/header.view.php");
 include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
 
-$_SESSION['loggedIn'] = false;
-
+$_SESSION["log"] = "maybe";
 ?>
+
 <div id="divBoxAdmin">
 <div id="loginForm">
 <form action='loginHandler.php' id='contactForm' method='post'>

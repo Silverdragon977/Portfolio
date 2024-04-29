@@ -1,5 +1,5 @@
 <?php 
-// session_start();
+session_start();
 // Path Configuring   //////////////////////////////////////
 $config = parse_ini_file('config.ini', true);
 $environment = $config['ENVIRONMENT'];
@@ -15,6 +15,7 @@ include_once($APP_ROOT . "/src/webPages/data.php");
 include_once($APP_ROOT . "/src/viewFiles/indexHead.view.php");
 include_once($APP_ROOT . "/src/viewFiles/indexHeader.view.php");
 include_once($APP_ROOT . "/src/viewFiles/navigation.view.php");
+$_SESSION['loggedIn'] = false;
 
 echo "HomePage";
 

@@ -5,6 +5,7 @@ $config = parse_ini_file('./../config.ini', true);
 $environment = $config['ENVIRONMENT'];
 $URL_BASE = $config[$environment]['URL_BASE'];
 $APP_ROOT = $config[$environment]['APP_ROOT'];
+session_start();
 ?>
 
 <!DOCTYPE html>

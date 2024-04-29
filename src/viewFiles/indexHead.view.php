@@ -7,6 +7,9 @@ the style sheet path
 <?php 
 $name = "Homepage";
 $pageName = "MH Portfolio";
+if(session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
 
 ?>
 

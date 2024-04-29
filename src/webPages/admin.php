@@ -1,9 +1,14 @@
 <?php
-
-// Check if logged in before displaying page
-if ($_SESSION['loggedIn'] != true){
-    header("Location: ./loginAdmin.php");
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
 }
+if ($_SESSION["log"] == "maybe"){
+    // not logged in
+    header("Location: ./loginAdmin.php");
+} elseif ($_SESSION["log"] == "no"){
+    // not logged in
+    header("Location: ./loginAdmin.php");
+};
 
 
 $config = parse_ini_file('config.ini', true);
