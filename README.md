@@ -1,12 +1,7 @@
-=======================================================
-==                                                   ==
-==    My Portfolio website: michaelhoward977.info    ==
-==                                                   ==
-=======================================================
-
-
 # Portfolio
- This website portfolio was made 4/12/24 (BSU)
+ This website portfolio was made 4/12/24 at BSU
+ fully moved to michaelhoward977.info as of 6/29/24
+ This site is hosted on digitalOcean as a LAMP Stack
 
 DONE ----->First setup the file structure and get a homepage working with the words "Hello World" on it
   make sure CSS and php is working correctly
