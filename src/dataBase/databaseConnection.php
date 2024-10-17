@@ -1,10 +1,10 @@
 <?php
 
 class DatabaseConnection {
-       private $user = 'mhoward';
-       private $pass = 'qz1319lk';
-       private $host = 'localhost';
-       private $name = 'mhoward';
+       private $user = '';
+       private $pass = '';
+       private $host = '';
+       private $name = '';
        private $conn = "";
         
        public function __construct(){
